@@ -28,12 +28,7 @@ pipeline {
            }
         }
 		
-		stage('code scan')
-        {
-          steps {
-           sh 'mvn sonar:sonar -Dsonar.host.url=http://52.91.239.102:9000 -Dsonar.login=14b5e6c097962abb67d5d81424658c12cb05ef7b'
-           }
-        }
+		
      stage('maven package')
         {
           steps {
